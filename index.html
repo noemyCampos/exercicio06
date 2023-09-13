@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div><h1>Lista de nomes</h1></div>
+    <div> 
+        <ul style="font-size: 35px">
+        <li class="1">Luffy</li>
+        <li class="2">Zoro</li>
+        <li class="3">Sanji</li>
+        <li class="4">Robin</li>
+        <li class="5">Nami</li>
+        </ul>
+    </div>
+    <div>
+        <button id="btn">Click aqui</button>
+    </div>
+    <script>
+        //$('h1').fadeOut("2000")
+        //$('h1').fadeOut("2000").fadeIn("2000") // sair da tela por 2 segundos e reaparecer
+        //$('li').remove() //remove li
+        // $('li').append(" de pessoas") //inseri informações
+        // $('#btn').on("click",botao)//ao clicar no botao  sumira a lista de nomes
+        // function botao(){
+        //     $('h1').remove()
+        // }
+        // $('#btn').on("click",botao) //ao clicar no botao a lista ficará azul
+        // function botao(){
+        //      $('li').css({'color':'blue'})
+        // }
+        $('#btn').on("click",botao)
+        function botao(){
+             $('.1').css({'color':'blue'})
+             $('#btn').on("click",botao)
+        function botao(){
+             $('.2').css({'color':'purple'})
+             $('#btn').on("click",botao)
+        function botao(){
+             $('.3').css({'color':'red'})
+             $('#btn').on("click",botao)
+        function botao(){
+             $('.4').css({'color':'pink'})
+             $('#btn').on("click",botao)
+        function botao(){
+             $('.5').css({'color':'green'})
+             $('#btn').on("click",botao)
+        }
+    }
+}
+        }
+    }
+    </script>
+</body>
+</html>
